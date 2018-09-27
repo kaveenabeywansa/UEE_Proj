@@ -314,7 +314,7 @@ class Cart extends Component {
                             <input id="cardno" type="number" className="form-control" placeholder="Card Number"/><br/>
                             <input id="cardcvc" type="password" className="form-control" placeholder="CVC Number"/><br/>
                             <input id="cardname" type="text" className="form-control" placeholder="Card Holder's Name"/><br/>
-                            <input id="cardexpiry" type="text" className="form-control" placeholder="Expiry Date"/><br/>
+                            <input id="cardexpiry" type="month" className="form-control" placeholder="Expiry Date"/><br/>
                             <button type="button" class="btn btn-danger" onClick={() => this.confirmpay()}>Pay</button>
                             </div>
                         </div>

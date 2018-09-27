@@ -1,0 +1,33 @@
+.breadcrumb{
+    margin-top: 1%;
+    background-color: #616060;
+    color:#FFFFFF;
+}
+.breadcrumb a{
+    color:#FFFFFF;
+}
+.logincreddiv{
+    margin-top: 1%;
+    padding-left: 3%;
+}
+.loggeduser{
+    margin-top: 1%;
+    padding-left: 3%;
+}
+.cartitems{
+    width: 90%;
+    /* outline: 2px dashed blue; */
+    padding: 3%;
+}
+.transbtn{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+.carddetails{
+    width: 70%;
+    padding-left: 10%;
+}

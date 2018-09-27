@@ -117,8 +117,8 @@ class Cart extends Component {
                         <li className="breadcrumb-item"><a href="">Ultrabook</a></li>
                         <li className="breadcrumb-item"><a href="">Gaming</a></li>
                         <li className="breadcrumb-item"><a href="">Desktop</a></li>
-                        <li className="breadcrumb-item"><a href="">Printer & Scanner</a></li>
-                        <li className="breadcrumb-item"><a href="">Ink & Toner</a></li>
+                        <li className="breadcrumb-item"><a href="">Printer Scanner</a></li>
+                        <li className="breadcrumb-item"><a href="">Ink Toner</a></li>
                         <li className="breadcrumb-item"><a href="">Accessories</a></li>
                         <li className="breadcrumb-item"><a href=""><img src={carticon} alt="Cart" /></a></li>
                     </ol>

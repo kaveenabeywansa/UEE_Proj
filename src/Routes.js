@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Cart from './Components/Cart';
+import JobProfile from './Components/JobProfile';
 
 export default () => {
     return (
@@ -8,6 +9,7 @@ export default () => {
             <Switch>
 
                 <Route path="/cart" exact component={Cart} />
+                <Route path="/jobprofile" exact component={JobProfile} />
             </Switch>
         </BrowserRouter>
     )

@@ -1,0 +1,54 @@
+  .LogInContainer {
+    margin-top: 5%;
+    text-align: center;
+    background-color:rgb(68, 204, 228);
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+    display: flex;
+  }
+  .resetpasscontainer {
+    text-align: center;
+    background-color:rgb(68, 204, 228);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    color:rgb(21, 49, 126);
+  }
+  .loginComps{
+    /* margin-top: 5%;
+    margin-left: 35%;
+    margin-right: 35%; */
+  }
+  body{
+   
+      background-attachment: fixed;
+      background-repeat:no-repeat;
+      background-size:100%;
+  }
+  .legendx{
+    color:rgb(21, 49, 126);
+  }
+  .h1x{
+      color:rgb(21, 49, 126);
+      margin-top: 10%;
+      font-size: 300%;
+      /* background-color: rgb(241, 14, 52); */
+  }
+
+  .btn_clear{
+
+    /* color: blue; */
+    block-size: 15%;
+    background-color: blue;
+    color:white;
+  }
+
+  .btn_SignIn{
+
+    /* color: blue; */
+    block-size: 15%;
+    background-color: blue;
+    color:white;
+  }

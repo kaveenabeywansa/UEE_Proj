@@ -45,44 +45,44 @@ class Cart extends Component {
         document.getElementById('crdselection').style.display = "none";
         document.getElementById('paymentdiv2').style.display = "inline";
     }
-    confirmpay(){
-        if(document.getElementById('cardno').value!=""){
-            if(document.getElementById('cardcvc').value!=""){
-                if(document.getElementById('cardname').value!=""){
-                    if(document.getElementById('cardexpiry').value!=""){
+    confirmpay() {
+        if (document.getElementById('cardno').value != "") {
+            if (document.getElementById('cardcvc').value != "") {
+                if (document.getElementById('cardname').value != "") {
+                    if (document.getElementById('cardexpiry').value != "") {
                         swal({
                             type: 'success',
                             title: 'Success',
                             text: 'Your payment was accepted !'
-                          });
-                          this.props.history.push('/index');
-                    }else{
+                        });
+                        this.props.history.push('/index');
+                    } else {
                         swal({
                             type: 'error',
                             title: 'Oops...',
                             text: 'Card Expiry Date not Entered !'
-                          });
+                        });
                     }
-                }else{
+                } else {
                     swal({
                         type: 'error',
                         title: 'Oops...',
                         text: 'Card Holders Name not Entered !'
-                      });
+                    });
                 }
-            }else{
+            } else {
                 swal({
                     type: 'error',
                     title: 'Oops...',
                     text: 'Card CVC Number is not entered !'
-                  });
+                });
             }
-        }else{
+        } else {
             swal({
                 type: 'error',
                 title: 'Oops...',
                 text: 'Card Number is not entered !'
-              });
+            });
         }
 
     }
@@ -108,7 +108,7 @@ class Cart extends Component {
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <ol className="breadcrumb">
-                        <li className="breadcrumb-item"><a href=""><img src={homeicon} alt="Home" /></a></li>
+                        <li className="breadcrumb-item"><a href="/index"><img src={homeicon} alt="Home" /></a></li>
                         <li className="breadcrumb-item"><a href="">Asus</a></li>
                         <li className="breadcrumb-item"><a href="">Dell</a></li>
                         <li className="breadcrumb-item"><a href="">HP</a></li>
@@ -120,7 +120,7 @@ class Cart extends Component {
                         <li className="breadcrumb-item"><a href="">Printer Scanner</a></li>
                         <li className="breadcrumb-item"><a href="">Ink Toner</a></li>
                         <li className="breadcrumb-item"><a href="">Accessories</a></li>
-                        <li className="breadcrumb-item"><a href=""><img src={carticon} alt="Cart" /></a></li>
+                        <li className="breadcrumb-item"><a href="/cart"><img src={carticon} alt="Cart" /></a></li>
                     </ol>
                     {/* <div className="logincreddiv">
                         <table>
@@ -142,7 +142,7 @@ class Cart extends Component {
                             <li className="breadcrumb-item">
                                 <a href=""><img src={UserIcon} alt="Bruce Wayne" /></a>
                                 &ensp;<a href="">Welcome Bruce Wayne</a>
-                                <a href="">(Sign Out)</a>
+                                <a href="/login">(Sign Out)</a>
                             </li>
                         </ol>
                     </div>
@@ -311,14 +311,17 @@ class Cart extends Component {
                         </div>
                         <div id="paymentdiv2" style={{ display: 'none' }} >
                             <div className="carddetails">
-                            <input id="cardno" type="number" className="form-control" placeholder="Card Number"/><br/>
-                            <input id="cardcvc" type="password" className="form-control" placeholder="CVC Number"/><br/>
-                            <input id="cardname" type="text" className="form-control" placeholder="Card Holder's Name"/><br/>
-                            <input id="cardexpiry" type="month" className="form-control" placeholder="Expiry Date"/><br/>
-                            <button type="button" class="btn btn-danger" onClick={() => this.confirmpay()}>Pay</button>
+                                <input id="cardno" type="number" className="form-control" placeholder="Card Number" /><br />
+                                <input id="cardcvc" type="password" className="form-control" placeholder="CVC Number" /><br />
+                                <input id="cardname" type="text" className="form-control" placeholder="Card Holder's Name" /><br />
+                                <input id="cardexpiry" type="month" className="form-control" placeholder="Expiry Date" /><br />
+                                <button type="button" class="btn btn-danger" onClick={() => this.confirmpay()}>Pay</button>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div style={{display: 'flex', justifyContent: 'center', marginTop:'3%'}}>
+                    Copyright © Team Int Elegance 2K18
                 </div>
             </div>
         );

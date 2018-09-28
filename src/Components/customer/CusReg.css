@@ -1,0 +1,40 @@
+
+
+.container {
+  /* text-align: left; */
+  margin-top: 5%;
+  /* margin-left: 35%;
+  margin-right: 35%; */
+  background-color:rgb(141, 208, 219);
+  color:rgb(21, 49, 126);
+}
+.form-group{
+  color: purple;
+}
+body{
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+.form-control{
+    color:black;
+}
+
+.Personal_Information{
+  color:rgb(105, 35, 105);
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+
+.Account_Information{
+  color:rgb(105, 35, 105);
+}
+
+.Contact_Information{
+  color:rgb(105, 35, 105);
+}
+.btn_reg{
+  margin-left: 35%;
+  block-size: 40px;
+  background-color: blue;
+  color:white;
+}

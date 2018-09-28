@@ -6,6 +6,7 @@ import homeicon from './images/homeicon.png';
 import carticon from './images/carticon.png';
 import UserIcon from './images/usericon.png';
 import Footer from './Footer';
+import swal from 'sweetalert2';
 import {
   Button, Container, Row, Col,
   InputGroup, InputGroupAddon, InputGroupText, Input,
@@ -57,8 +58,11 @@ class App extends React.Component {
 
   }
   bSave(data) {
-    alert(data);
-    console.log("bSave");
+    swal({
+      type: 'info',
+      title: 'Message',
+      text: data
+  });
   }
 
   render() {

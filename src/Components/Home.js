@@ -4,7 +4,7 @@ import './Home.css';
 import logo from './images/logo.png';
 import homeicon from './images/homeicon.png';
 import carticon from './images/carticon.png';
-
+import UserIcon from './images/usericon.png';
 import { Fade } from 'react-slideshow-image';
 
 import Pic1 from './images/laptoplk.JPG';
@@ -76,7 +76,7 @@ class App extends Component {
           </nav>
         </div>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <ol className="breadcrumb">
+          {/* <ol className="breadcrumb">
             <li className="breadcrumb-item"><a href="/index"><img src={homeicon} alt="Home" /></a></li>
             <li className="breadcrumb-item"><a href="">Asus</a></li>
             <li className="breadcrumb-item"><a href="">Dell</a></li>
@@ -90,11 +90,14 @@ class App extends Component {
             <li className="breadcrumb-item"><a href="">Ink Toner</a></li>
             <li className="breadcrumb-item"><a href="">Accessories</a></li>
             <li className="breadcrumb-item"><a href="/cart"><img src={carticon} alt="Cart" /></a></li>
-          </ol>
+          </ol> */}
           <div className="logincreddiv">
             <ol className="breadcrumb">
-              <li className="breadcrumb-item"><a href="/login">Login</a></li>
-              <li className="breadcrumb-item"><a href="/customerreg">Sign Up</a></li>
+              <li className="breadcrumb-item">
+                <a href="/index"><img src={homeicon} alt="Home" /></a>&ensp;
+                <a href="/cart"><img src={carticon} alt="Cart" /></a>&ensp;
+                <a href="/login"><img src={UserIcon} alt="Login" /></a>&ensp;
+                <a href="/customerreg">Sign Up</a></li>
               <li className="breadcrumb-item"><a href="/passwordReset">Forgot Password</a></li>
             </ol>
           </div>

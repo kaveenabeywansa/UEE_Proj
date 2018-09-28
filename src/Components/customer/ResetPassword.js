@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import logo from '../images/logo.png';
 import homeicon from '../images/homeicon.png';
 import carticon from '../images/carticon.png';
+import UserIcon from '../images/usericon.png';
 import './Login.css';
 import swal from 'sweetalert2';
 //import './ResetPassword.css';
@@ -49,7 +50,7 @@ class ResetPassword extends Component {
                     </nav>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <ol className="breadcrumb">
+                    {/* <ol className="breadcrumb">
                         <li className="breadcrumb-item"><a href="/index"><img src={homeicon} alt="Home" /></a></li>
                         <li className="breadcrumb-item"><a href="">Asus</a></li>
                         <li className="breadcrumb-item"><a href="">Dell</a></li>
@@ -63,11 +64,14 @@ class ResetPassword extends Component {
                         <li className="breadcrumb-item"><a href="">Ink Toner</a></li>
                         <li className="breadcrumb-item"><a href="">Accessories</a></li>
                         <li className="breadcrumb-item"><a href="/cart"><img src={carticon} alt="Cart" /></a></li>
-                    </ol>
+                    </ol> */}
                     <div className="logincreddiv">
                         <ol className="breadcrumb">
-                            <li className="breadcrumb-item"><a href="/login">Login</a></li>
-                            <li className="breadcrumb-item"><a href="/customerreg">Sign Up</a></li>
+                            <li className="breadcrumb-item">
+                                <a href="/index"><img src={homeicon} alt="Home" /></a>&ensp;
+                                <a href="/cart"><img src={carticon} alt="Cart" /></a>&ensp;
+                                <a href="/login"><img src={UserIcon} alt="Login" /></a>&ensp;
+                                <a href="/customerreg">Sign Up</a></li>
                             <li className="breadcrumb-item"><a href="/passwordReset">Forgot Password</a></li>
                         </ol>
                     </div>

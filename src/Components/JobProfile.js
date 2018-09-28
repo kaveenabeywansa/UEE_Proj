@@ -35,7 +35,7 @@ class JobProfile extends Component {
                     </nav>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <ol className="breadcrumb">
+                    {/* <ol className="breadcrumb">
                         <li className="breadcrumb-item"><a href="/index"><img src={homeicon} alt="Home" /></a></li>
                         <li className="breadcrumb-item"><a href="">Asus</a></li>
                         <li className="breadcrumb-item"><a href="">Dell</a></li>
@@ -49,11 +49,14 @@ class JobProfile extends Component {
                         <li className="breadcrumb-item"><a href="">Ink Toner</a></li>
                         <li className="breadcrumb-item"><a href="">Accessories</a></li>
                         <li className="breadcrumb-item"><a href="/cart"><img src={carticon} alt="Cart" /></a></li>
-                    </ol>
+                    </ol> */}
                     <div className="logincreddiv">
                         <ol className="breadcrumb">
-                            <li className="breadcrumb-item"><a href="/login">Login</a></li>
-                            <li className="breadcrumb-item"><a href="/customerreg">Sign Up</a></li>
+                            <li className="breadcrumb-item">
+                                <a href="/index"><img src={homeicon} alt="Home" /></a>&ensp;
+                                <a href="/cart"><img src={carticon} alt="Cart" /></a>&ensp;
+                                <a href="/login"><img src={UserIcon} alt="Login" /></a>&ensp;
+                                <a href="/customerreg">Sign Up</a></li>
                             <li className="breadcrumb-item"><a href="/passwordReset">Forgot Password</a></li>
                         </ol>
                     </div>
@@ -61,8 +64,8 @@ class JobProfile extends Component {
                 <center><h1>Job Profile</h1></center>
                 <div className="tabs">
                     <div className="tab">
-                        <button className="tablinks" onClick={()=>this.CreateProfile()}>Create Profile</button>
-                        <button className="tablinks" onClick={()=>this.ViewProfile()}>View Profile</button>
+                        <button className="tablinks" onClick={() => this.CreateProfile()}>Create Profile</button>
+                        <button className="tablinks" onClick={() => this.ViewProfile()}>View Profile</button>
                     </div>
 
                     <div id="CreateTab" className="tabcontent">
@@ -70,7 +73,7 @@ class JobProfile extends Component {
                         <p>sdfsfdsf</p>
                     </div>
 
-                    <div id="ViewTab" className="tabcontent" style={{display:'none'}}>
+                    <div id="ViewTab" className="tabcontent" style={{ display: 'none' }}>
                         <h3>View Profile</h3>
                     </div>
 

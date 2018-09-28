@@ -107,7 +107,7 @@ class Cart extends Component {
                     </nav>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <ol className="breadcrumb">
+                    {/* <ol className="breadcrumb">
                         <li className="breadcrumb-item"><a href="/index"><img src={homeicon} alt="Home" /></a></li>
                         <li className="breadcrumb-item"><a href="">Asus</a></li>
                         <li className="breadcrumb-item"><a href="">Dell</a></li>
@@ -121,7 +121,7 @@ class Cart extends Component {
                         <li className="breadcrumb-item"><a href="">Ink Toner</a></li>
                         <li className="breadcrumb-item"><a href="">Accessories</a></li>
                         <li className="breadcrumb-item"><a href="/cart"><img src={carticon} alt="Cart" /></a></li>
-                    </ol>
+                    </ol> */}
                     {/* <div className="logincreddiv">
                         <table>
                         <tbody>
@@ -140,9 +140,10 @@ class Cart extends Component {
                     <div className="loggeduser">
                         <ol className="breadcrumb">
                             <li className="breadcrumb-item">
-                                <a href=""><img src={UserIcon} alt="Bruce Wayne" /></a>
-                                &ensp;<a href="">Welcome Bruce Wayne</a>
-                                <a href="/login">(Sign Out)</a>
+                                <a href="/index"><img src={homeicon} alt="Home" /></a>&ensp;
+                                <a href="/cart"><img src={carticon} alt="Cart" /></a>&ensp;
+                                <a href="/login"><img src={UserIcon} alt="Bruce Wayne" /></a>
+                                &ensp;<a href="">Bruce&ensp;</a><a href="/login">(Sign Out)</a>
                             </li>
                         </ol>
                     </div>
@@ -320,7 +321,7 @@ class Cart extends Component {
                         </div>
                     </div>
                 </div>
-                <div style={{display: 'flex', justifyContent: 'center', marginTop:'3%'}}>
+                <div style={{ display: 'flex', justifyContent: 'center', marginTop: '3%' }}>
                     Copyright © Team Int Elegance 2K18
                 </div>
             </div>

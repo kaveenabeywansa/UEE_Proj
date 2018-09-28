@@ -29,7 +29,7 @@ class App extends Component {
     this.props.history.push('/cart');
   }
   gotolaptops() {
-    this.props.history.push('/index');
+    this.props.history.push('/search');
   }
   gotomap() {
     // this.props.history.push('/index');

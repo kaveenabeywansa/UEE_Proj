@@ -6,6 +6,7 @@ import carticon from '../images/carticon.png';
 import UserIcon from '../images/usericon.png';
 import './Login.css';
 import swal from 'sweetalert2';
+import Footer from '../Footer';
 //import './ResetPassword.css';
 
 class ResetPassword extends Component {
@@ -99,9 +100,7 @@ class ResetPassword extends Component {
                         </div>
                     </form>
                 </div>
-                <div style={{ display: 'flex', justifyContent: 'center', marginTop: '3%' }}>
-                    Copyright © Team Int Elegance 2K18
-                </div>
+                <Footer/>
             </div>
         );
     }

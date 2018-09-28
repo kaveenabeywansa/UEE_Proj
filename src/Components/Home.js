@@ -6,10 +6,14 @@ import homeicon from './images/homeicon.png';
 import carticon from './images/carticon.png';
 import UserIcon from './images/usericon.png';
 import { Fade } from 'react-slideshow-image';
+import Footer from './Footer';
 
-import Pic1 from './images/laptoplk.JPG';
-import Pic2 from './images/tiny-laptops.jpg';
-import Pic3 from './images/Laptops-cashback-2._CB470588634_.jpg';
+import Pic1 from './images/wide1.jpg';
+import Pic2 from './images/wide2.jpg';
+import Pic3 from './images/wide3.jpg';
+// import Pic1 from './images/laptoplk.JPG';
+// import Pic2 from './images/tiny-laptops.jpg';
+// import Pic3 from './images/Laptops-cashback-2._CB470588634_.jpg';
 import contactus from './images/HomeContact.png';
 import laptops from './images/HomeLaptops.png';
 import add from './images/HomeSignup.png';
@@ -162,9 +166,7 @@ class App extends Component {
         <div>
 
         </div>
-        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '3%' }}>
-          Copyright © Team Int Elegance 2K18
-        </div>
+        <Footer/>
       </div>
     );
   }

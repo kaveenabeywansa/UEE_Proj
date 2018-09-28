@@ -6,6 +6,7 @@ import homeicon from '../images/homeicon.png';
 import carticon from '../images/carticon.png';
 import UserIcon from '../images/usericon.png';
 import swal from 'sweetalert2';
+import Footer from '../Footer';
 
 class Login extends Component {
     clearFields() {
@@ -85,9 +86,9 @@ class Login extends Component {
                             </table>
                             {/* <br /> */}
                             <input type="checkbox" />Remember Me.<br /><br />
-                            <button type="button" className="btn_clear" onClick={() => this.clearFields()}>Reset Fields</button>
+                            <button type="button" className="btn btn-danger" onClick={() => this.clearFields()}>Reset Fields</button>
                             {'    '}
-                            <button type="button" className="btn_SignIn" onClick={() => this.signIn(this)}>Sign In</button>
+                            <button type="button" className="btn btn-success" onClick={() => this.signIn(this)}>Sign In</button>
                             <br /><br />
                             <Link to="/passwordReset">Forgot Password</Link><br /><br />
                             <Link to="/customerreg">New User Registration</Link>
@@ -97,9 +98,7 @@ class Login extends Component {
                         </fieldset>
                     </form>
                 </div>
-                <div style={{ display: 'flex', justifyContent: 'center', marginTop: '3%' }}>
-                    Copyright © Team Int Elegance 2K18
-                </div>
+                <Footer/>
             </div>
         );
     }

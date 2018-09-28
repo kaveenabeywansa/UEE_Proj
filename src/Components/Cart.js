@@ -14,7 +14,7 @@ import Visa from './images/visa.png';
 import Master from './images/master.jpg';
 import './Cart.css';
 import swal from 'sweetalert2';
-
+import Footer from './Footer';
 
 class Cart extends Component {
     removeItem(item, price, qty, hidprice) {
@@ -321,9 +321,7 @@ class Cart extends Component {
                         </div>
                     </div>
                 </div>
-                <div style={{ display: 'flex', justifyContent: 'center', marginTop: '3%' }}>
-                    Copyright © Team Int Elegance 2K18
-                </div>
+                <Footer/>
             </div>
         );
     }

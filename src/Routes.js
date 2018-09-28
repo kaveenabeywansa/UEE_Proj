@@ -18,7 +18,7 @@ export default () => {
                 <Route path="/cart" exact component={Cart} />
                 <Route path="/jobprofile" exact component={JobProfile} />
                 <Route path="/index" exact component={Home} />
-                <Route path="/" exact component={Login} />
+                <Route path="/" exact component={Home} />
                 <Route path="/login" exact component={Login} />
                 <Route path="/customerReg" exact component={Cus} />
                 <Route path="/passwordReset" exact component={ResetPassword} />

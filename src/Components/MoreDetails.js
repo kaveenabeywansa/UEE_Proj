@@ -9,6 +9,7 @@ import llogo from './images/logo.png';
 import homeicon from './images/homeicon.png';
 import carticon from './images/carticon.png';
 import UserIcon from './images/usericon.png';
+import Footer from './Footer';
 
 export default class MoreDetails extends Component {
 
@@ -130,6 +131,7 @@ export default class MoreDetails extends Component {
                         </div>
                     </div>
                 </div>
+                <Footer/>
             </div>
         );
     }

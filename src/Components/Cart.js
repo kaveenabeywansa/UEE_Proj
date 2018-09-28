@@ -173,8 +173,8 @@ class Cart extends Component {
                                                     <option>4</option>
                                                     <option>5</option>
                                                 </select>
-                                                <div id="priceitm1" style={{ backgroundColor: 'red', textAlign: 'center' }}>Rs. 110,000.00</div>
                                             </p>
+                                            <div id="priceitm1" style={{ backgroundColor: 'red', textAlign: 'center' }}>Rs. 110,000.00</div>
                                         </div>
                                     </div>
                                 </div>
@@ -199,8 +199,8 @@ class Cart extends Component {
                                                     <option>4</option>
                                                     <option>5</option>
                                                 </select>
-                                                <div id="priceitm2" style={{ backgroundColor: 'red', textAlign: 'center' }}>Rs. 468,000.00</div>
                                             </p>
+                                            <div id="priceitm2" style={{ backgroundColor: 'red', textAlign: 'center' }}>Rs. 468,000.00</div>
                                         </div>
                                     </div>
                                 </div>
@@ -226,8 +226,8 @@ class Cart extends Component {
                                                     <option>4</option>
                                                     <option>5</option>
                                                 </select>
-                                                <div id="priceitm3" style={{ backgroundColor: 'red', textAlign: 'center' }}>Rs. 160,000.00</div>
                                             </p>
+                                            <div id="priceitm3" style={{ backgroundColor: 'red', textAlign: 'center' }}>Rs. 160,000.00</div>
                                         </div>
                                     </div>
                                 </div>
@@ -253,8 +253,8 @@ class Cart extends Component {
                                                     <option>4</option>
                                                     <option>5</option>
                                                 </select>
-                                                <div id="priceitm4" style={{ backgroundColor: 'red', textAlign: 'center' }}>Rs. 19,500.00</div>
                                             </p>
+                                            <div id="priceitm4" style={{ backgroundColor: 'red', textAlign: 'center' }}>Rs. 19,500.00</div>
                                         </div>
                                     </div>
                                 </div>
@@ -280,8 +280,8 @@ class Cart extends Component {
                                                     <option>4</option>
                                                     <option>5</option>
                                                 </select>
-                                                <div id="priceitm5" style={{ backgroundColor: 'red', textAlign: 'center' }}>Rs. 23,000.00</div>
                                             </p>
+                                            <div id="priceitm5" style={{ backgroundColor: 'red', textAlign: 'center' }}>Rs. 23,000.00</div>
                                         </div>
                                     </div>
                                 </div>
@@ -299,7 +299,7 @@ class Cart extends Component {
                         </div>
                     </div>
                     <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
-                        <button type="button" class="btn btn-success" style={{ width: '50%' }} onClick={() => this.checkout()} >Checkout</button>
+                        <button type="button" className="btn btn-success" style={{ width: '50%' }} onClick={() => this.checkout()} >Checkout</button>
                     </div>
                     <div id="paymentdiv" style={{ display: 'none' }} >
                         <h3 style={{ paddingLeft: '3%' }}>Payment Gateway</h3>
@@ -315,7 +315,7 @@ class Cart extends Component {
                                 <input id="cardcvc" type="password" className="form-control" placeholder="CVC Number" /><br />
                                 <input id="cardname" type="text" className="form-control" placeholder="Card Holder's Name" /><br />
                                 <input id="cardexpiry" type="month" className="form-control" placeholder="Expiry Date" /><br />
-                                <button type="button" class="btn btn-danger" onClick={() => this.confirmpay()}>Pay</button>
+                                <button type="button" className="btn btn-danger" onClick={() => this.confirmpay()}>Pay</button>
                             </div>
                         </div>
                     </div>

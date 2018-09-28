@@ -3,7 +3,17 @@ import logo from './images/logo.png';
 import homeicon from './images/homeicon.png';
 import carticon from './images/carticon.png';
 import UserIcon from './images/usericon.png';
+import './JobProfile.css';
 class JobProfile extends Component {
+
+    CreateProfile() {
+        document.getElementById('CreateTab').style.display = "inline";
+        document.getElementById('ViewTab').style.display = "none";
+    }
+    ViewProfile() {
+        document.getElementById('ViewTab').style.display = "inline";
+        document.getElementById('CreateTab').style.display = "none";
+    }
     render() {
         return (
             <div>
@@ -26,7 +36,7 @@ class JobProfile extends Component {
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <ol className="breadcrumb">
-                        <li className="breadcrumb-item"><a href=""><img src={homeicon} alt="Home" /></a></li>
+                        <li className="breadcrumb-item"><a href="/index"><img src={homeicon} alt="Home" /></a></li>
                         <li className="breadcrumb-item"><a href="">Asus</a></li>
                         <li className="breadcrumb-item"><a href="">Dell</a></li>
                         <li className="breadcrumb-item"><a href="">HP</a></li>
@@ -35,37 +45,36 @@ class JobProfile extends Component {
                         <li className="breadcrumb-item"><a href="">Ultrabook</a></li>
                         <li className="breadcrumb-item"><a href="">Gaming</a></li>
                         <li className="breadcrumb-item"><a href="">Desktop</a></li>
-                        <li className="breadcrumb-item"><a href="">Printer & Scanner</a></li>
-                        <li className="breadcrumb-item"><a href="">Ink & Toner</a></li>
+                        <li className="breadcrumb-item"><a href="">Printer Scanner</a></li>
+                        <li className="breadcrumb-item"><a href="">Ink Toner</a></li>
                         <li className="breadcrumb-item"><a href="">Accessories</a></li>
-                        <li className="breadcrumb-item"><a href=""><img src={carticon} alt="Cart" /></a></li>
+                        <li className="breadcrumb-item"><a href="/cart"><img src={carticon} alt="Cart" /></a></li>
                     </ol>
-                    {/* <div className="logincreddiv">
-                        <table>
-                        <tbody>
-                            <tr>
-                                <td><input type="email" className="form-control" id="uname" placeholder="Enter Username" /></td>
-                                <td><input type="password" className="form-control" id="upass" placeholder="Password" /></td>
-                                <td><button type="button" className="btn btn-danger">Login</button></td>
-                            </tr>
-                            <tr>
-                                <td><a href="">New User Sign Up</a></td>
-                                <td><a href="">Forgot Your Password</a></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div> */}
-                    <div className="loggeduser">
+                    <div className="logincreddiv">
                         <ol className="breadcrumb">
-                            <li className="breadcrumb-item">
-                                <a href=""><img src={UserIcon} alt="Bruce Wayne" /></a>
-                                &ensp;<a href="">Welcome Bruce Wayne</a>
-                                <a href="">(Sign Out)</a>
-                            </li>
+                            <li className="breadcrumb-item"><a href="/login">Login</a></li>
+                            <li className="breadcrumb-item"><a href="/customerreg">Sign Up</a></li>
+                            <li className="breadcrumb-item"><a href="/passwordReset">Forgot Password</a></li>
                         </ol>
                     </div>
                 </div>
-                <h1>Job Profile</h1>
+                <center><h1>Job Profile</h1></center>
+                <div className="tabs">
+                    <div className="tab">
+                        <button className="tablinks" onClick={()=>this.CreateProfile()}>Create Profile</button>
+                        <button className="tablinks" onClick={()=>this.ViewProfile()}>View Profile</button>
+                    </div>
+
+                    <div id="CreateTab" className="tabcontent">
+                        <h3>Create Profile</h3>
+                        <p>sdfsfdsf</p>
+                    </div>
+
+                    <div id="ViewTab" className="tabcontent" style={{display:'none'}}>
+                        <h3>View Profile</h3>
+                    </div>
+
+                </div>
             </div>
         );
     }

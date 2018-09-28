@@ -40,7 +40,7 @@ class App extends Component {
     });
   }
   gotosignup() {
-    this.props.history.push('/customerreg');
+    this.props.history.push('/jobprofile');
   }
   render() {
     const fadeImages = [
@@ -135,7 +135,7 @@ class App extends Component {
 
               <td>
                 <button className="transbtn" ><img className="button" src={add} alt="my image" onClick={() => this.gotosignup()} /></button>
-                <label>User Signup</label>
+                <label>Job Profile</label>
               </td>
 
             </tr>

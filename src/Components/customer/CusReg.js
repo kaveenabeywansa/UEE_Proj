@@ -81,17 +81,17 @@ class CustomerReg extends Component {
                                             </tr>
                                             <br />
                                             <tr>
-                                                <td><label htmlFor="First_Name">First_Name</label></td>
+                                                <td><label htmlFor="First_Name">First_Name*</label></td>
                                                 <td><input type="text" className="form-control" id="First_Name" aria-describedby="emailHelp" placeholder="First Name"></input></td>
                                             </tr>
 
                                             <tr>
-                                                <td><label htmlFor="Last_Name">Last_Name</label></td>
+                                                <td><label htmlFor="Last_Name">Last_Name*</label></td>
                                                 <td><input type="text" className="form-control" id="Last_Name" aria-describedby="emailHelp" placeholder="Last Name"></input></td>
                                             </tr>
 
                                             <tr>
-                                                <td><label htmlFor="NIC_Passport">NIC_Passport</label></td>
+                                                <td><label htmlFor="NIC_Passport">NIC_Passport*</label></td>
                                                 <td><input type="text" className="form-control" id="NIC_Passport" aria-describedby="emailHelp" placeholder="NIC_Passport"></input></td>
                                             </tr>
 
@@ -119,27 +119,27 @@ class CustomerReg extends Component {
                                             </tr>
                                             <br />
                                             <tr>
-                                                <td><label htmlFor="First_Name">Email Address</label></td>
+                                                <td><label htmlFor="First_Name">Email Address*</label></td>
                                                 <td><input type="text" className="form-control" id="Email" aria-describedby="emailHelp" placeholder="Email Address"></input></td>
                                             </tr>
 
                                             <tr>
-                                                <td><label htmlFor="Password">Password</label></td>
-                                                <td><input type="text" className="form-control" id="Password" aria-describedby="emailHelp" placeholder="Password"></input></td>
+                                                <td><label htmlFor="Password">Password*</label></td>
+                                                <td><input type="password" className="form-control" id="Password" aria-describedby="emailHelp" placeholder="Password"></input></td>
                                             </tr>
 
                                             <tr>
-                                                <td><label htmlFor="ReType_Password">ReType_Password</label></td>
-                                                <td><input type="text" className="form-control" id="ReType_Password" aria-describedby="emailHelp" placeholder="ReType Password"></input></td>
+                                                <td><label htmlFor="ReType_Password">ReType_Password*</label></td>
+                                                <td><input type="password" className="form-control" id="ReType_Password" aria-describedby="emailHelp" placeholder="ReType Password"></input></td>
                                             </tr>
 
                                             <tr>
-                                                <td><label htmlFor="Security_Question">Security_Question</label></td>
+                                                <td><label htmlFor="Security_Question">Security_Question*</label></td>
                                                 <td><input type="text" className="form-control" id="Security_Question" aria-describedby="emailHelp" placeholder="Security Question"></input></td>
                                             </tr>
 
                                             <tr>
-                                                <td><label htmlFor="Security_Answer">Security_Answer</label></td>
+                                                <td><label htmlFor="Security_Answer">Security_Answer*</label></td>
                                                 <td><input type="text" className="form-control" id="Security_Answer" aria-describedby="emailHelp" placeholder="Security_Answer"></input></td>
                                             </tr>
 
@@ -158,7 +158,7 @@ class CustomerReg extends Component {
                                             </tr>
 
                                             <tr>
-                                                <td><label htmlFor="Mobile_Number">Mobile_Number</label></td>
+                                                <td><label htmlFor="Mobile_Number">Mobile_Number*</label></td>
                                                 <td><input type="text" className="form-control" id="Mobile" aria-describedby="emailHelp" placeholder="Mobile Number"></input></td>
                                             </tr>
 

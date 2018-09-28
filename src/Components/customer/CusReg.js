@@ -168,7 +168,7 @@ class CustomerReg extends Component {
                                 {/* <button className="btn btn-primary" onClick={() => this.registerCus(this)}>Submit</button> */}
                                 <div className="row">
                                     <div className="col-md-4">
-                                        <button type="Submit" className="btn_reg" onClick={() => this.registerCus(this)}>Submit</button>
+                                        <button type="Submit" className="btn btn-success" onClick={() => this.registerCus(this)}>Submit</button>
                                     </div>
                                 </div>
                                 <br /><br />

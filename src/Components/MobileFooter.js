@@ -29,31 +29,7 @@ class Footer extends Component {
                         <p className="footer-company-name">Laptop.lk &copy; 2018</p>
                     </div>
 
-                    <div className="footer-center">
-
-                        <div>
-                            <i className="fa fa-map-marker"></i>
-                            <p><span>102,</span>Unity Plaza, Colombo</p>
-                        </div>
-
-                        <div>
-                            <i className="fa fa-phone"></i>
-                            <p>0114 389 459</p>
-                        </div>
-
-                        <div>
-                            <i className="fa fa-envelope"></i>
-                            <p><a href="mailto:support@company.com">info@laptop.lk</a></p>
-                        </div>
-
-                    </div>
-
                     <div className="footer-right">
-
-                        <p className="footer-company-about">
-                            <span>About the company</span>
-                            Laptop.lk was incorporated & established in 1996, and to date is a well-known leading retail store.
-                            </p>
 
                         <div className="footer-icons">
 

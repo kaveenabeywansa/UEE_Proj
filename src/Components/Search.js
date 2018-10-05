@@ -39,7 +39,7 @@ export default class Search extends Component {
                             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#mm" aria-controls="mm">
                                 <span className="navbar-toggler-icon"></span>
                             </button>
-                            <a href="/"><img src={llogo} alt="laptop.lk" /></a>
+                            <a href="/"><img src={llogo} /></a>
                             <a href="/cart"><img src={carticon} alt="Cart" /></a>&ensp;
                             <a href="/login"><img src={UserIcon} alt="Login" /></a>&ensp;
                             <div className="collapse navbar-collapse" id="navbarColor02">
@@ -56,7 +56,7 @@ export default class Search extends Component {
                                         <option>Charges</option>
                                         <option>Hard Drives</option>
                                     </select>
-                                    <button class="btn btn-success col-2" type="submit" onClick={() => this.SearchBtn(this)} style={{"margin-left":"12px","width":"1%"}}>
+                                    <button class="btn btn-success col-2" type="submit" onClick={() => this.Searchbtn(this)} style={{"margin-left":"12px","width":"1%"}}>
                                         <img src={s} height="20" width="20"/>
                                     </button>
                         </form>
@@ -166,29 +166,31 @@ export default class Search extends Component {
                     ) : (
                     <div>
                         <div>
-                        <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-                            
-                            <a href="/"><img src={llogo} alt="laptop.lk" /></a>
-                                <div style={{ marginLeft:"10%" }}>
-                                    <form className="form-inline my-2 my-lg-0" style={{"float":"right"}}>
-                                        <input class="form-control col-5" type="text" placeholder="Search"/>
-                                        <select class="form-control col-4" id="exampleSelect1" style={{"font-size":"13px","margin-left":"1%"}}>
-                                            <option>Laptops</option>
-                                            <option>Batteries</option>
-                                            <option>Charges</option>
-                                            <option>Hard Drives</option>
-                                        </select>
-                                        <button class="btn btn-success col-2" type="submit" onClick={() => this.SearchBtn(this)} style={{"margin-left":"12px","width":"1%"}}>
-                                            <img src={s} height="20" width="20"/>
-                                        </button>
-                                    </form>
-                                </div>
-                                <div style={{ marginRight:"10%"}}>
-                                    <a href="/cart"><img src={carticon} alt="Cart" /></a>&ensp;
-                                    <a href="/login"><img src={UserIcon} alt="Login" /></a>&ensp;
-                                </div>
-                        </nav>
-                    </div>
+                    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
+                        </button>
+                        <a href="/"><img src={llogo} alt="laptop.lk" /></a>
+                        <div className="collapse navbar-collapse" id="navbarColor02">
+                            <ul className="navbar-nav mr-auto">
+                            </ul>
+                            <form className="form-inline my-2 my-lg-0" style={{"margin-left":"3px","float":"right"}}>
+                                <input class="form-control col-3" type="text" placeholder="Search" style={{"min-width":"150px"}}/>
+                                <select class="form-control col-2" id="exampleSelect1" style={{"font-size":"13px","min-width":"100px","margin-left":"1%"}}>
+                                    <option>Laptops</option>
+                                    <option>Batteries</option>
+                                    <option>Charges</option>
+                                    <option>Hard Drives</option>
+                                </select>
+                                <button class="btn btn-success col-2" type="submit" onClick={() => this.Searchbtn(this)} style={{"margin-left":"12px","width":"1%"}}>
+                                    <img src={s} height="20" width="20"/>
+                                </button>
+                            </form>
+                            <a href="/cart"><img src={carticon} alt="Cart" /></a>&ensp;
+                            <a href="/login"><img src={UserIcon} alt="Login" /></a>&ensp;
+                        </div>
+                    </nav>
+                </div>
                     <Nav/>
                     <div class="container" >
                         

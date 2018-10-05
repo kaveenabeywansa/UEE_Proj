@@ -8,6 +8,7 @@ import JobProfile from './Components/JobProfile';
 import Home from './Components/Home';
 import Search from './Components/Search';
 import MoreDetails from './Components/MoreDetails';
+import MobileViewLap from './Components/MobileViewLap';
 
 export default () => {
     return (
@@ -22,6 +23,7 @@ export default () => {
                 <Route path="/login" exact component={Login} />
                 <Route path="/customerReg" exact component={Cus} />
                 <Route path="/passwordReset" exact component={ResetPassword} />
+                <Route path="/mobileLaps" exact component={MobileViewLap} />
             </Switch>
         </BrowserRouter>
     )

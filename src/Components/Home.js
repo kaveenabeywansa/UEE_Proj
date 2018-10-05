@@ -27,6 +27,7 @@ import map from './images/HomeMap.png';
 import cart from './images/HomeCart.png';
 import swal from 'sweetalert2';
 import Media from "react-media";
+import s from './img/ss.png';
 
 class App extends Component {
   gotocontact() {
@@ -58,6 +59,9 @@ class App extends Component {
   Morebtn(obj) {
     obj.props.history.push('/details');
   }
+  Mobilelapsbtn(obj){
+    obj.props.history.push('/mobileLaps');
+  }
   render() {
     const fadeImages = [
       './images/slide_2.JPG',
@@ -80,10 +84,11 @@ class App extends Component {
               <div>
                 <div>
                   <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-                    <a href=""><img src={logo} alt="laptop.lk" /></a>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                       <span className="navbar-toggler-icon"></span>
                     </button>
+                    <a href=""><img src={logo} alt="laptop.lk" /></a>
+                    
 
                     <div className="collapse navbar-collapse" id="navbarColor02">
                       <ul className="navbar-nav mr-auto">
@@ -111,16 +116,18 @@ class App extends Component {
                     <li className="breadcrumb-item"><a href="">Accessories</a></li>
                     <li className="breadcrumb-item"><a href="/cart"><img src={carticon} alt="Cart" /></a></li>
                   </ol> */}
-                  <div className="logincreddiv">
-                    <ol className="breadcrumb">
-                      <li className="breadcrumb-item">
-                        <a href="/index"><img src={homeicon} alt="Home" /></a>&ensp;
-                        <a href="/cart"><img src={carticon} alt="Cart" /></a>&ensp;
-                        <a href="/login"><img src={UserIcon} alt="Login" /></a>&ensp;
-                        <a href="/customerreg">Sign Up</a></li>
-                      <li className="breadcrumb-item"><a href="/passwordReset">Forgot Password</a></li>
-                    </ol>
-                  </div>
+                  <form className="form-inline my-2 my-lg-0" style={{"margin-left":"3px","float":"right"}}>
+                                    <input class="form-control col-5" type="text" placeholder="Search"/>
+                                    <select class="form-control col-4" id="exampleSelect1" style={{"font-size":"13px","margin-left":"1%"}}>
+                                        <option>Laptops</option>
+                                        <option>Batteries</option>
+                                        <option>Charges</option>
+                                        <option>Hard Drives</option>
+                                    </select>
+                                    <button class="btn btn-success col-2" type="submit" onClick={() => this.gotosearch(this)} style={{"margin-left":"12px","width":"1%"}}>
+                                        <img src={s} height="20" width="20"/>
+                                    </button>
+                        </form>
                 </div>
                 
                 <div style={{ width: '80%', marginRight: 'auto', marginLeft: 'auto' }}>
@@ -152,7 +159,7 @@ class App extends Component {
                       </td>
 
                       <td>
-                        <button className="transbtn" ><img className="button" src={laptops} alt="my image" onClick={() => this.gotolaptops()} /></button>
+                        <button className="transbtn" ><img className="button" src={laptops} alt="my image" onClick={() => this.gotosearch(this)} /></button>
                         <label>Laptops</label>
                       </td>
 

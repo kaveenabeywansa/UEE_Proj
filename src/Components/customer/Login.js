@@ -7,6 +7,7 @@ import carticon from '../images/carticon.png';
 import UserIcon from '../images/usericon.png';
 import swal from 'sweetalert2';
 import Footer from '../Footer';
+import Nav from '../NavigationBar';
 
 class Login extends Component {
     clearFields() {
@@ -27,7 +28,7 @@ class Login extends Component {
             <div>
                 <div>
                     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-                        <a href=""><img src={logo} alt="laptop.lk" /></a>
+                        <div><a href="/"><img src={logo} alt="laptop.lk"/></a></div>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
@@ -78,20 +79,20 @@ class Login extends Component {
                                 <tr>
                                     <td><label >Email</label></td>
                                     <td><input type="email" className="form-control" id="Email" aria-describedby="emailHelp" placeholder="Email Address" /></td>
-                                </tr>
+                                </tr><br/>
                                 <tr>
                                     <td><label >Password</label></td>
                                     <td><input type="Password" className="form-control" id="Password" placeholder="Password" /></td>
                                 </tr>
                             </table>
-                            {/* <br /> */}
+                            <br />
                             <input type="checkbox" />Remember Me.<br /><br />
                             <button type="button" className="btn btn-danger" onClick={() => this.clearFields()}>Reset Fields</button>
                             {'    '}
                             <button type="button" className="btn btn-success" onClick={() => this.signIn(this)}>Sign In</button>
                             <br /><br />
-                            <Link to="/passwordReset">Forgot Password</Link><br /><br />
-                            <Link to="/customerreg">New User Registration</Link>
+                            <Link to="/passwordReset" style={{"color":"black"}}>Forgot Password</Link><br /><br />
+                            <Link to="/customerreg" style={{"color":"black"}}>New User Registration</Link>
                             {/* </div> */}
                             <div>
                             </div>

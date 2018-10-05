@@ -7,6 +7,7 @@ import carticon from '../images/carticon.png';
 import UserIcon from '../images/usericon.png';
 import swal from 'sweetalert2';
 import Footer from '../Footer';
+import Nav from '../NavigationBar';
 
 class CustomerReg extends Component {
     registerCus(obj) {
@@ -22,7 +23,7 @@ class CustomerReg extends Component {
             <div>
                 <div>
                     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-                        <a href=""><img src={logo} alt="laptop.lk" /></a>
+                        <a href="/"><img src={logo} alt="laptop.lk" /></a>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
@@ -83,22 +84,22 @@ class CustomerReg extends Component {
                                             <tr>
                                                 <td><label htmlFor="First_Name">First_Name*</label></td>
                                                 <td><input type="text" className="form-control" id="First_Name" aria-describedby="emailHelp" placeholder="First Name"></input></td>
-                                            </tr>
+                                            </tr><br/>
 
                                             <tr>
                                                 <td><label htmlFor="Last_Name">Last_Name*</label></td>
                                                 <td><input type="text" className="form-control" id="Last_Name" aria-describedby="emailHelp" placeholder="Last Name"></input></td>
-                                            </tr>
+                                            </tr><br/>
 
                                             <tr>
                                                 <td><label htmlFor="NIC_Passport">NIC_Passport*</label></td>
                                                 <td><input type="text" className="form-control" id="NIC_Passport" aria-describedby="emailHelp" placeholder="NIC_Passport"></input></td>
-                                            </tr>
+                                            </tr><br/>
 
                                             <tr>
                                                 <td><label htmlFor="DateOfBirth">DateOfBirth</label></td>
                                                 <td><input type="date" className="form-control" /></td>
-                                            </tr>
+                                            </tr><br/>
 
                                             <tr>
                                                 <td><label htmlFor="Gender">Gender</label></td>
@@ -106,7 +107,7 @@ class CustomerReg extends Component {
                                                     <option>Female</option>
                                                     <option>Male</option>
                                                 </select></td>
-                                            </tr>
+                                            </tr><br/>
 
                                         </table>
                                         <br />
@@ -121,27 +122,27 @@ class CustomerReg extends Component {
                                             <tr>
                                                 <td><label htmlFor="First_Name">Email Address*</label></td>
                                                 <td><input type="text" className="form-control" id="Email" aria-describedby="emailHelp" placeholder="Email Address"></input></td>
-                                            </tr>
+                                            </tr><br/>
 
                                             <tr>
                                                 <td><label htmlFor="Password">Password*</label></td>
                                                 <td><input type="password" className="form-control" id="Password" aria-describedby="emailHelp" placeholder="Password"></input></td>
-                                            </tr>
+                                            </tr><br/>
 
                                             <tr>
                                                 <td><label htmlFor="ReType_Password">ReType_Password*</label></td>
                                                 <td><input type="password" className="form-control" id="ReType_Password" aria-describedby="emailHelp" placeholder="ReType Password"></input></td>
-                                            </tr>
+                                            </tr><br/>
 
                                             <tr>
                                                 <td><label htmlFor="Security_Question">Security_Question*</label></td>
                                                 <td><input type="text" className="form-control" id="Security_Question" aria-describedby="emailHelp" placeholder="Security Question"></input></td>
-                                            </tr>
+                                            </tr><br/>
 
                                             <tr>
                                                 <td><label htmlFor="Security_Answer">Security_Answer*</label></td>
                                                 <td><input type="text" className="form-control" id="Security_Answer" aria-describedby="emailHelp" placeholder="Security_Answer"></input></td>
-                                            </tr>
+                                            </tr><br/>
 
                                         </table>
                                         <br />
@@ -155,12 +156,12 @@ class CustomerReg extends Component {
                                             <tr>
                                                 <td><label htmlFor="Address">Address</label></td>
                                                 <td><input type="text" className="form-control" id="Address" aria-describedby="emailHelp" placeholder="Address"></input></td>
-                                            </tr>
+                                            </tr><br/>
 
                                             <tr>
                                                 <td><label htmlFor="Mobile_Number">Mobile_Number*</label></td>
                                                 <td><input type="text" className="form-control" id="Mobile" aria-describedby="emailHelp" placeholder="Mobile Number"></input></td>
-                                            </tr>
+                                            </tr><br/>
 
                                         </table>
                                     </fieldset>
@@ -169,6 +170,7 @@ class CustomerReg extends Component {
                                 <div className="row">
                                     <div className="col-md-4">
                                         <button type="Submit" className="btn btn-success" onClick={() => this.registerCus(this)}>Submit</button>
+                                        <button type="button" className="btn btn-danger" style={{marginLeft:"5px"}}>Reset</button>
                                     </div>
                                 </div>
                                 <br /><br />

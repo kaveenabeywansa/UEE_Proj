@@ -7,6 +7,8 @@ import carticon from './images/carticon.png';
 import UserIcon from './images/usericon.png';
 import Footer from './Footer';
 import swal from 'sweetalert2';
+import Navi from './NavigationBar';
+
 import {
   Button, Container, Row, Col,
   InputGroup, InputGroupAddon, InputGroupText, Input,
